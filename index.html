@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OUTFIRE S.A. | Sistemas de protección contra incendio</title>
+<meta name="description" content="OUTFIRE S.A.: consultoría, ingeniería, auditoría, diseño, instalación y mantenimiento de sistemas de protección contra incendio. Disposición 215, NFPA e IRAM.">
+<link rel="icon" href="logo-outfire.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ BARRA SUPERIOR ============ -->
+<div class="topbar">
+  <div class="container topbar__inner">
+    <div class="topbar__group">
+      <a href="mailto:outfire@outfire.com.ar">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        outfire@outfire.com.ar
+      </a>
+      <a href="tel:+541148233410">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+        (011) 4823-3410 / 4821-8259
+      </a>
+    </div>
+    <div class="topbar__group">
+      <span>Caseros, Buenos Aires</span>
+      <!-- TODO: reemplazar 5491100000000 por el número real de WhatsApp (formato internacional, sin + ni espacios) -->
+      <a class="topbar__wa" href="https://wa.me/5491100000000" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="#inicio" aria-label="OUTFIRE S.A., inicio">
+      <img src="logo-outfire.png" alt="" width="123" height="121">
+      <span class="brand__text">
+        <span class="brand__name">OUT<span>FIRE</span> S.A.</span>
+        <span class="brand__tag">Sistemas contra incendio</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav id="nav" class="nav" aria-label="Principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#empresa">Empresa</a>
+      <a href="#soluciones">Soluciones</a>
+      <a href="#sistemas">Sistemas</a>
+      <a href="#disposicion">Disposición 215</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn btn--rojo" href="#contacto">Solicitar asesoría</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO / CARRUSEL ============ -->
+<section id="inicio" class="hero" aria-roledescription="carrusel" aria-label="Sistemas OUTFIRE">
+  <img class="hero__bg is-active" src="sala-bombas.jpg" alt="">
+  <img class="hero__bg" src="rociador.jpg" alt="" loading="lazy">
+  <img class="hero__bg" src="deteccion.jpg" alt="" loading="lazy">
+  <img class="hero__bg" src="hidrantes.jpg" alt="" loading="lazy">
+  <img class="hero__bg" src="agentes-limpios.jpg" alt="" loading="lazy">
+  <div class="hero__scrim" aria-hidden="true"></div>
+
+  <div class="container hero__inner">
+    <div class="hero__content" aria-live="polite">
+      <div class="hero__kicker" data-slide-text="kicker">Protección contra incendio</div>
+      <h1 class="titulo titulo--xl" data-slide-text="title">Sistemas de alta confiabilidad para proteger lo que importa</h1>
+      <p class="hero__text" data-slide-text="text">Diseñamos, instalamos y mantenemos sistemas de detección y extinción para industrias, edificios y riesgos especiales.</p>
+      <div class="hero__ctas">
+        <a class="btn btn--rojo" href="#contacto" data-slide-text="cta">Solicitar asesoría</a>
+        <a class="btn btn--borde" href="#soluciones">Ver soluciones</a>
+      </div>
+      <div class="hero__controls">
+        <button class="hero__arrow" type="button" data-hero-prev aria-label="Diapositiva anterior">‹</button>
+        <div class="hero__dots" data-hero-dots></div>
+        <button class="hero__arrow" type="button" data-hero-next aria-label="Diapositiva siguiente">›</button>
+        <span class="hero__counter" data-hero-counter>01 / 05</span>
+      </div>
+    </div>
+    <div class="hero__label hide-sm" data-slide-text="label">Sala de bombas</div>
+  </div>
+</section>
+
+<!-- ============ LEMA ============ -->
+<section class="lema">
+  <div class="container lema__inner">
+    <p>No hacemos instalaciones: fabricamos sistemas de alta confiabilidad.</p>
+    <a href="#empresa">Conocé la empresa →</a>
+  </div>
+</section>
+
+<!-- ============ MARCAS ============ -->
+<section class="marcas">
+  <div class="container marcas__inner">
+    <h2 class="titulo titulo--m center">Marcas con las que trabajamos</h2>
+    <!-- Para usar logos: reemplazar el texto por <img src="marcas/notifier.png" alt="Notifier"> -->
+    <div class="marcas__grid">
+      <div class="marca">KOMTTECH</div>
+      <div class="marca">NOTIFIER</div>
+      <div class="marca">FIRE-LITE</div>
+      <div class="marca">SILENT KNIGHT</div>
+      <div class="marca">HOCHIKI</div>
+      <div class="marca">SIMPLEX</div>
+      <div class="marca">VESDA</div>
+      <div class="marca">SYSTEM SENSOR</div>
+      <div class="marca">ANSUL</div>
+      <div class="marca">KIDDE</div>
+      <div class="marca">FIKE</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOLUCIONES ============ -->
+<section id="soluciones" class="section section--crema">
+  <div class="container">
+    <div class="soluciones__head">
+      <div>
+        <span class="kicker">Soluciones</span>
+        <h2 class="titulo titulo--m">Ingeniería aplicada a la protección contra incendio</h2>
+      </div>
+      <p>Consultoría, ingeniería, auditoría, diseño e instalación, cubriendo los aspectos técnicos y legales de cada proyecto.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <svg role="img" aria-label="Extinción" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#D7141A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/><path d="M9 15a3 3 0 0 0 3 3"/></svg>
+        <h3>Extinción</h3>
+        <p>Salas de bombas, hidrantes, rociadores, espuma, diluvio, campanas de cocina y agentes gaseosos (CO2, Inergen, FM200, Novec 1230).</p>
+        <a href="#sistemas">Ver más →</a>
+      </article>
+      <article class="card">
+        <svg role="img" aria-label="Detección" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#D7141A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M6.5 6.5a8 8 0 0 0 0 11M17.5 6.5a8 8 0 0 1 0 11M3.5 3.5a12 12 0 0 0 0 17M20.5 3.5a12 12 0 0 1 0 17"/></svg>
+        <h3>Detección</h3>
+        <p>Centrales convencionales e inteligentes, detección temprana por aspiración, detección de CO2 y gases, evacuación por audio.</p>
+        <a href="#sistemas">Ver más →</a>
+      </article>
+      <article class="card">
+        <svg role="img" aria-label="Mantenimiento" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#D7141A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5 5L21 13l-8 8-3-3 8-8z"/><path d="M14.7 6.3L10 2 6 6l4.3 4.7"/><path d="M3 21l4-4"/></svg>
+        <h3>Mantenimiento</h3>
+        <p>Planes según Disposición 215, IRAM y NFPA. Recargas, pruebas hidráulicas y servicio postventa.</p>
+        <a href="#disposicion">Ver más →</a>
+      </article>
+      <article class="card">
+        <svg role="img" aria-label="Ingeniería" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#D7141A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V10l7-5 7 5v11"/><path d="M9 21v-6h6v6"/></svg>
+        <h3>Ingeniería</h3>
+        <p>Proyectos a medida, riesgos especiales, planes de evacuación, auditorías y dirección de obra.</p>
+        <a href="#contacto">Ver más →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SISTEMAS ============ -->
+<section id="sistemas" class="section">
+  <div class="container">
+    <h2 class="titulo titulo--m center">Conocé nuestros sistemas</h2>
+    <div class="sistemas__grid">
+      <a class="tile" href="#contacto">
+        <span class="tile__img"><img src="rociador.jpg" alt="Rociador automático en cañería" loading="lazy"></span>
+        <span class="tile__bar"><span>Rociadores y espuma</span><span class="tile__arrow" aria-hidden="true">→</span></span>
+      </a>
+      <a class="tile" href="#contacto">
+        <span class="tile__img"><img src="deteccion.jpg" alt="Detector de humo" loading="lazy"></span>
+        <span class="tile__bar"><span>Detección de incendios</span><span class="tile__arrow" aria-hidden="true">→</span></span>
+      </a>
+      <a class="tile" href="#contacto">
+        <span class="tile__img"><img src="hidrantes.jpg" alt="Red de hidrantes con válvulas" loading="lazy"></span>
+        <span class="tile__bar"><span>Hidrantes</span><span class="tile__arrow" aria-hidden="true">→</span></span>
+      </a>
+      <a class="tile" href="#contacto">
+        <span class="tile__img"><img src="agentes-limpios.jpg" alt="Cilindros de agente limpio protegiendo un data center" loading="lazy"></span>
+        <span class="tile__bar"><span>Agentes limpios</span><span class="tile__arrow" aria-hidden="true">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DISPOSICIÓN 215 ============ -->
+<section id="disposicion" class="section section--negro">
+  <div class="container dos-col">
+    <div class="stack">
+      <span class="kicker kicker--amarillo">Normativa CABA</span>
+      <h2 class="titulo titulo--l">Disposición 215/DGHP/2015</h2>
+      <p class="disp__text">Somos empresa registrada para realizar las tareas que exige la normativa (Ley 2.231, IRAM 3546). Te ayudamos a cumplir con todas las obligaciones del titular.</p>
+      <div class="hero__ctas">
+        <a class="btn btn--rojo" href="#contacto">Quiero cumplir la 215</a>
+        <a class="btn btn--borde" href="#contacto">Leer la normativa</a>
+      </div>
+    </div>
+    <ol class="disp__list">
+      <li><b>01</b><span>Plano de la instalación aprobado</span></li>
+      <li><b>02</b><span>Libro de Actas rubricado</span></li>
+      <li><b>03</b><span>Mantenimiento anual por empresa registrada</span></li>
+      <li><b>04</b><span>Controles trimestrales</span></li>
+      <li><b>05</b><span>Certificado de operatividad exhibido</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ EMPRESA ============ -->
+<section id="empresa" class="section section--crema">
+  <div class="container dos-col dos-col--top">
+    <div class="stack">
+      <span class="kicker">La empresa</span>
+      <h2 class="titulo titulo--s">Consultora técnica y legal en protección contra incendio</h2>
+      <p class="texto">OUT FIRE S.A. se dedica a la consultoría, ingeniería, auditoría, diseño e instalación de sistemas de protección contra incendio: detección, extinción, evacuación por audio y protección de riesgos especiales.</p>
+      <img class="empresa__foto" src="sala-bombas.jpg" alt="Sala de bombas contra incendio" loading="lazy">
+    </div>
+    <div class="stack">
+      <h3 class="titulo titulo--xs">Servicios complementarios</h3>
+      <div class="extras">
+        <div class="extra"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D7141A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Door fan test</div>
+        <div class="extra"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D7141A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Recarga de sistemas</div>
+        <div class="extra"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D7141A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Pruebas hidráulicas</div>
+        <div class="extra"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D7141A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Servicio postventa</div>
+        <div class="extra"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D7141A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Capacitación</div>
+        <div class="extra"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D7141A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Planes de evacuación</div>
+        <div class="extra"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D7141A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Dirección de obra</div>
+        <div class="extra"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D7141A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Riesgos especiales</div>
+      </div>
+      <h3 class="titulo titulo--xs" style="margin-top: 24px">Miembros de</h3>
+      <div class="orgs">
+        <a class="org" href="https://www.nfpa.org" target="_blank" rel="noopener"><b>NFPA</b><span>nfpa.org</span></a>
+        <a class="org" href="https://www.cas-seguridad.org.ar" target="_blank" rel="noopener"><b>CAS</b><span>Cámara Arg. de Seguridad</span></a>
+        <a class="org" href="https://www.casel.org.ar" target="_blank" rel="noopener"><b>CASEL</b><span>Cámara Arg. Seg. Electrónica</span></a>
+        <a class="org" href="https://www.cessi.org.ar" target="_blank" rel="noopener"><b>CESSI</b><span>Cámara Software</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section id="contacto" class="section">
+  <div class="container dos-col dos-col--top">
+    <div class="stack">
+      <span class="kicker">Contacto</span>
+      <h2 class="titulo titulo--m">Solicitá asesoría técnica</h2>
+      <p class="texto">Contanos sobre tu instalación y un ingeniero de OUTFIRE te responde.</p>
+      <div class="contacto__datos">
+        <div><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D7141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Fray Mamerto Esquiú 4751, Caseros</div>
+        <div><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D7141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+541148233410">+54 11 4823-3410</a>&nbsp;·&nbsp;<a href="tel:+541148218259">+54 11 4821-8259</a></div>
+        <div><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D7141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:outfire@outfire.com.ar">outfire@outfire.com.ar</a></div>
+      </div>
+      <iframe class="mapa" title="Ubicación de OUTFIRE en Google Maps" src="https://www.google.com/maps?q=Fray+Mamerto+Esqui%C3%BA+4751,+Caseros,+Buenos+Aires&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- TODO: conectar el formulario. Opción simple: Formspree (action="https://formspree.io/f/TU_ID") o el PHP/servicio de mail del hosting -->
+    <form class="form" action="#" method="post">
+      <label>Nombre<input type="text" name="nombre" autocomplete="name" required></label>
+      <label>Empresa<input type="text" name="empresa" autocomplete="organization"></label>
+      <label>Email<input type="email" name="email" autocomplete="email" required></label>
+      <label>Teléfono<input type="tel" name="telefono" autocomplete="tel"></label>
+      <label class="full">Servicio de interés
+        <select name="servicio">
+          <option>Extinción</option>
+          <option>Detección</option>
+          <option>Mantenimiento / Disposición 215</option>
+          <option>Ingeniería y auditoría</option>
+        </select>
+      </label>
+      <label class="full">Mensaje<textarea name="mensaje" rows="5" required></textarea></label>
+      <button class="btn btn--rojo full" type="submit">Enviar consulta</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <span class="footer__logo"><img src="logo-outfire.png" alt="OUTFIRE" width="123" height="121"></span>
+      <p>Sistemas de protección contra incendio de alta confiabilidad.</p>
+    </div>
+    <div class="footer__col">
+      <h5>SOLUCIONES</h5>
+      <a href="#soluciones">Extinción</a>
+      <a href="#soluciones">Detección</a>
+      <a href="#disposicion">Mantenimiento</a>
+      <a href="#soluciones">Ingeniería</a>
+    </div>
+    <div class="footer__col">
+      <h5>EMPRESA</h5>
+      <a href="#empresa">Quiénes somos</a>
+      <a href="#disposicion">Disposición 215</a>
+      <a href="#contacto">Trabajá con nosotros</a>
+    </div>
+    <div class="footer__col">
+      <h5>CONTACTO</h5>
+      <span>Fray Mamerto Esquiú 4751, Caseros</span>
+      <a href="tel:+541148233410">+54 11 4823-3410</a>
+      <a href="mailto:outfire@outfire.com.ar">outfire@outfire.com.ar</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <span>© <span data-year>2026</span> OUT FIRE S.A. Todos los derechos reservados.</span>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLOTANTE ============ -->
+<!-- TODO: reemplazar 5491100000000 por el número real -->
+<a class="wa-float" href="https://wa.me/5491100000000" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+  <svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.3-3.9A8.5 8.5 0 1 1 8 18.8z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a5 5 0 0 1-2.3-2.3l.8-1-1-2z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>
