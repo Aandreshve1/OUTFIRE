@@ -1,0 +1,34 @@
+OUTFIRE S.A. — Sitio web (HTML + CSS + JS, sin dependencias)
+=============================================================
+
+ESTRUCTURA
+  index.html        Página principal
+  css/styles.css    Estilos (colores de marca al inicio, en :root)
+  js/main.js        Carrusel del hero, menú móvil y año del footer
+  img/              Logo y fotos
+
+CÓMO VERLO
+  Abrir index.html con doble clic en cualquier navegador.
+
+CÓMO PUBLICARLO
+  Subir la carpeta completa (manteniendo la estructura) al hosting,
+  por FTP o el administrador de archivos (cPanel, etc.), dentro de
+  public_html/ o la carpeta raíz del dominio outfire.com.ar.
+
+PENDIENTES ANTES DE PUBLICAR
+  1. WhatsApp: reemplazar 5491100000000 por el número real
+     (aparece 2 veces en index.html; buscar "wa.me").
+  2. Formulario: hoy no envía. Opciones:
+     - Formspree: crear cuenta gratis y poner en <form action="https://formspree.io/f/TU_ID">
+     - O el script de envío de mail que ofrezca el hosting.
+  3. Fotos: reemplazar por versiones de mayor resolución (ideal 1920 px
+     de ancho para el carrusel) manteniendo los mismos nombres en img/.
+  4. Logos de marcas: guardar en img/marcas/ y reemplazar cada texto
+     <div class="marca">NOTIFIER</div> por
+     <div class="marca"><img src="img/marcas/notifier.png" alt="Notifier"></div>
+  5. Logo: si tienen el logo en PNG transparente o SVG, reemplazar
+     img/logo-outfire.png.
+
+TEXTOS DEL CARRUSEL
+  Se editan en js/main.js (lista SLIDES). El orden coincide con el
+  de las imágenes .hero__bg en index.html.
